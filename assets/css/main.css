@@ -3,10 +3,12 @@
 
 body {
   background-color: #000;
+  font-size: 18px;
 }
 
 body * {
   font-family: 'Roboto', sans-serif;
+
 }
 
 #carousel img {
@@ -19,7 +21,7 @@ body * {
 
 
 main {
-  width: 80%;
+  width: 70%;
   margin: auto;
   /* para centrar lo que contiene el main */
 }
@@ -68,9 +70,10 @@ main {
 }
 
 
-.quienesSomos .col-4 p {
+.quienesSomos p {
   text-align: left;
   display: inline-block;
+  font-size: 18px;
 }
 
 .destacados h2 {
@@ -96,6 +99,22 @@ main {
 }
 
 
+.navbar a{
+  font-size: 1.2rem;
+}
+
+.navbar-brand{
+  padding-left: 4rem;
+  padding-top: 1rem;
+}
+
+.navbar-nav{
+  padding-right: 4rem;
+  padding-top: 1rem;
+}
+
+
+
 .container-footer {
   display: flex;
   height: 100%; /* altura del conteneedor */
@@ -107,9 +126,7 @@ main {
   padding-left: 8rem;
   padding-right: 8rem;
   text-align: center;
-  align-items: center; /* Centra en el eje vertical */
-
- 
+  align-items: center; /* Centra en el eje vertical */ 
 }
 
 .container-footer li {
@@ -130,24 +147,6 @@ main {
 
 .contacto h3{
   text-align: center;
-}
-
-@media only screen and (max-width: 750px) {
-  
-.container-footer {
-  display: flex;
-  height: 100%; /* altura del conteneedor */
-  padding: 2rem;
-  color: #fff;
-  background-color: #299ba6;
-  font-size: 1rem;
-  justify-content: space-between; /* Alinea los elementos al inicio y al final del contenedor */
-  padding: auto;
-  text-align: center;
-  align-items: center; /* Centra en el eje vertical */
-
- 
-}
 }
 
 a {
@@ -172,3 +171,61 @@ a:hover {
 .navbar-scrolled {
   background-color: #20818b ; 
 }
+
+
+
+/* Se agregan media queries  */
+
+@media (max-width: 770px) {
+  .iconos {
+    order: -1; /* con esto cambio el orden para mover la caja icono arriba */
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  
+  .container-footer {
+    display: flex;
+    height: 100%; /* altura del conteneedor */
+    padding: 2rem;
+    color: #fff;
+    background-color: #299ba6;
+    font-size: 1rem;
+    justify-content: space-between; /* Alinea los elementos al inicio y al final del contenedor */
+    text-align: center;
+    align-items: center; /* Centra de manera vertical */
+  
+   
+  }
+  }
+
+  @media only screen and (max-width: 1200px) {
+    main {
+      width: 90%;
+      margin: auto;
+    }
+
+    .navbar a{
+      font-size: 1rem;
+    }
+
+    .navbar-brand{
+      padding-left: 1rem;
+      padding-top: 1rem;
+    }
+
+    .container-footer li {
+      font-size: 1rem;
+      list-style: none;
+      display: inline-block;
+      margin: 0 0.2rem;
+    }
+     
+    .card-body{
+      background-color: #20818b;
+      color:#fff;
+      font-size: 1rem;
+    }
+    
+    
+  }
