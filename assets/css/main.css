@@ -53,6 +53,7 @@ main {
   width: 100%;
   height: auto;
   max-width: 300px;
+  border: none;
 }
 
 .card-body{
