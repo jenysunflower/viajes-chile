@@ -13,10 +13,10 @@ body * {
 
 #carousel img {
   width: 100%;
-  height: auto;
+  height: 800px;
   object-fit: cover;
   object-position: center;
-  /*   object-position: 0 120px; se usa para mover */
+  /* object-position: 0 120px; se usa para mover la imagen */
 }
 
 
@@ -215,7 +215,7 @@ a:hover {
     }
 
     .container-footer li {
-      font-size: 1rem;
+      font-size: 1.2rem;
       list-style: none;
       display: inline-block;
       margin: 0 0.2rem;
@@ -225,7 +225,6 @@ a:hover {
       background-color: #20818b;
       color:#fff;
       font-size: 1rem;
-    }
-    
+    }  
     
   }
