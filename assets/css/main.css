@@ -55,6 +55,11 @@ main {
   max-width: 300px;
 }
 
+.card-body{
+  background-color: #20818b;
+  color:#fff;
+}
+
 .card img {
   object-fit: cover;
   width: 100%;
