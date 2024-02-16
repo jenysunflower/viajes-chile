@@ -4,11 +4,13 @@ $(function(){
     const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
     const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 
-    var correoClick = $('#enviarEmail');
+    
+
+ /*    var correoClick = $('#enviarEmail');
             correoClick.click(function(e) {
                 alert("El correo fue enviado correctamente.")
             });
-
+ */
   
     /* Función para cambiar los colores según se mueve y según se abre */
     $(document).ready(function() {
@@ -33,8 +35,23 @@ $(function(){
       });
       
 
-
-
+      
+      /* Función para scroll */
+      $(document).ready(function(){
+        $("a").on('click', function(event) {
+          if (this.hash !== "") {
+            event.preventDefault();
+            var hash = this.hash;
+  
+            // Función de Jquery
+            $('html, body').animate({
+              scrollTop: $(hash).offset().top
+            }, 800, function(){
+              window.location.hash = hash;
+            });
+          } 
+        });
+      });
 
 
 });
