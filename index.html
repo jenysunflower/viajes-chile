@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Se inserta cdn de bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/36059b73db.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="assets/css/main.css">
+  <meta name="author" content="Jeny">
+  <meta name="description" content="Prueba Módulo 1 Viajes Chile">
+  <title>Viajes Chile</title>
+</head>
+
+<body>
+  <header>
+    <!-- Inicio de barra de navegación -->
+    <nav class="navbar navbar-expand-lg fixed-top" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand logo" href="#">
+          <img src="assets/img/viajes.svg" alt="Logo de Viajes Chile">Viajes Chile</a>
+        <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-md-auto">
+            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            <a class="nav-link d-none d-sm-block" href="#somos">Quienes Somos</a>
+            <a class="nav-link" href="#destacados">Destacados</a>
+            <a class="nav-link" href="#contacto">Contacto</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Cierre de barra de navegación -->
+
+    <!-- Inicio de carrusel de imágenes -->
+    <div id="carousel" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="assets/img/carousel1.jpg" class="d-block" alt="Imagen de paisaje">
+        </div>
+        <div class="carousel-item">
+          <img src="assets/img/carousel2.jpg" class="d-block" alt="Imagen de paisaje">
+        </div>
+        <div class="carousel-item">
+          <img src="assets/img/carousel3.jpg" class="d-block" alt="Imagen paisaje">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+    <!-- Cierre de carrusel de imágenes -->
+  </header>
+
+  <main class="">
+    <!-- Inicio de sección Quiénes Somos -->
+    <section class="quienesSomos" id="somos">
+      <div class="container-fluid d-none d-sm-block">
+        <h1>¿QUIÉNES SOMOS?</h1>
+        <div class="row">
+          <div class="col-md-4 d-flex flex-column">
+            <div class="iconos">
+              <i class="fa-solid fa-plane"></i>
+            </div>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id, provident quis? Quam at, laborum saepe
+              libero molestiae error autem ex magni qui esse illo dolorem iusto doloribus? Quisquam, qui veritatis!
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque eos pariatur rerum laborum unde neque
+              ipsum nostrum expedita facilis aperiam beatae repellendus perspiciatis nihil molestias alias, magnam
+              deleniti fugiat officiis?</p>
+          </div>
+          <div class="col-md-4 d-flex flex-column ">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id, provident quis? Quam at, laborum saepe
+              libero molestiae error autem ex magni qui esse illo dolorem iusto doloribus? Quisquam, qui veritatis!
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio sed nobis rerum. Aliquam optio culpa
+              perferendis debitis voluptatibus sequi sunt recusandae eos asperiores, vel dolore vitae tenetur harum
+              labore aut?</p>
+            <div class="iconos">
+              <i class="fa-solid fa-mountain "></i>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex flex-column">
+            <div class="iconos">
+              <i class="fa-solid fa-route"></i>
+            </div>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id, provident quis? Quam at, laborum saepe
+              libero molestiae error autem ex magni qui esse illo dolorem iusto doloribus? Quisquam, qui veritatis!
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, quia! Nostrum facere nesciunt doloremque
+              cupiditate voluptates repellendus amet quos nemo et totam, mollitia sed, ut dicta fugit. Eveniet, aliquam
+              eum.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Cierre de sección Quiénes Somos -->
+
+    <!-- Inicio de sección destacados -->
+    <section class="destacados" id="destacados">
+      <div class="container-fluid">
+        <div class="row">
+          <h2>DESTACADOS</h2>
+          <div class="col-md-3 col-12 d-flex flex-column  align-items-center justify-content-center">
+            <div class="card">
+              <img src="assets/img/card1.jpg" class="card-img-top" alt="Imagen de lago en montaña">
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content. Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3  col-12 d-flex flex-column my-4  align-items-center justify-content-center">
+            <div class="card">
+              <img src="assets/img/card2.jpg" class="card-img-top" alt="Imagen de lago en el desierto ">
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content. Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-12 d-flex flex-column my-4  align-items-center justify-content-center">
+            <div class="card">
+              <img src="assets/img/card3.jpg" class="card-img-top" alt="Imagen de playa">
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content. Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 d-flex col-12 flex-column my-4  align-items-center justify-content-center">
+            <div class="card">
+              <img src="assets/img/card4.jpg" class="card-img-top" alt="Imagen de bosque">
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content. Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Cierre de sección destacados -->
+
+    <!-- Inicio de formulario de Contacto -->
+   <section class="contacto" id="contacto">
+      <div class="container-fluid">
+        <div class="row">
+          <h3>CONTACTO</h3>
+          <form>
+            <div class="mb-3">
+              <label for="nombre" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="nombre">
+            </div>
+            <div class="mb-3">
+              <label for="asunto" class="form-label">Asunto</label>
+              <input type="text"  class="form-control" id="asunto"">
+            </div>
+            <div>
+              <label for="mensaje" class="form-label">Mensaje</label>
+              <textarea class="form-control" id="floatingTextarea2"
+                style="height: 100px"></textarea>
+            </div>
+            <button type="submit" class="btn my-3" id="enviarEmail" data-bs-toggle="tooltip"  data-bs-placement="right"
+              data-bs-custom-class="tooltip-personalizado" data-bs-title="Presione para enviar">Enviar</button>
+          </form>
+        </div>
+      </div>
+    </section>
+      <!-- Cierre de formulario de Contacto -->
+  </main>
+
+  <!-- Inicio de Footer -->
+  <footer>
+    <div class="container-footer">
+      <span>VIAJES CHILE</span>
+      <ul class="footer_iconos">
+        <li><a href="https://github.com/" target="_blank"><i class="fa-brands fa-github"></i></a></s></li>
+        <li><a href="https://linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+        <li><a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-square-twitter"></i></a></li>
+        <li><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a></li>
+      </ul>
+    </div>
+  </footer>
+  <!-- Cierre de Footer -->
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="assets/js/main.js"></script>
+
+
+</body>
+
+</html>

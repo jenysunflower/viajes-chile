@@ -1,0 +1,168 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:wght@400;700&display=swap');
+
+body {
+  background-color: #000;
+}
+
+body * {
+  font-family: 'Roboto', sans-serif;
+}
+
+#carousel img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+  /*   object-position: 0 120px; se usa para mover */
+}
+
+
+main {
+  width: 80%;
+  margin: auto;
+  /* para centrar lo que contiene el main */
+}
+
+.logo img {
+  width: 2.5rem;
+  height: auto;
+  object-fit: cover;
+  margin: 0 0.5rem;
+}
+
+.quienesSomos {
+  color: #fff;
+  margin: 6rem 0;
+}
+
+.quienesSomos h1 {
+  font-size: 2rem;
+  margin: 3rem 0;
+  text-align: center;
+
+}
+
+.iconos {
+  background-color: #299ba6;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.card {
+  width: 100%;
+  height: auto;
+  max-width: 300px;
+}
+
+.card img {
+  object-fit: cover;
+  width: 100%;
+  height: 150px;
+}
+
+
+.quienesSomos .col-4 p {
+  text-align: left;
+  display: inline-block;
+}
+
+.destacados h2 {
+  color: #fff;
+  font-size: 2rem;
+  margin: 0 0 3rem 0;
+  text-align: center;
+}
+
+.contacto{
+  color: #fff;
+  margin: 6rem 0;
+}
+
+.btn {
+  color: #fff;
+  background-color: #299ba6;
+}
+
+.btn:hover {
+  color: #299ba6;
+  background-color: #fff;
+}
+
+
+.container-footer {
+  display: flex;
+  height: 100%; /* altura del conteneedor */
+  padding: 2rem;
+  color: #fff;
+  background-color: #299ba6;
+  font-size: 1rem;
+  justify-content: space-between; /* Alinea los elementos al inicio y al final del contenedor */
+  padding-left: 8rem;
+  padding-right: 8rem;
+  text-align: center;
+  align-items: center; /* Centra en el eje vertical */
+
+ 
+}
+
+.container-footer li {
+  font-size: 2rem;
+  list-style: none;
+  display: inline-block;
+  margin: 0 0.2rem;
+}
+
+.container-footer ul {
+  margin: 0;
+}
+
+
+.contacto{
+  color: #fff;
+}
+
+.contacto h3{
+  text-align: center;
+}
+
+@media only screen and (max-width: 750px) {
+  
+.container-footer {
+  display: flex;
+  height: 100%; /* altura del conteneedor */
+  padding: 2rem;
+  color: #fff;
+  background-color: #299ba6;
+  font-size: 1rem;
+  justify-content: space-between; /* Alinea los elementos al inicio y al final del contenedor */
+  padding: auto;
+  text-align: center;
+  align-items: center; /* Centra en el eje vertical */
+
+ 
+}
+}
+
+a {
+  color: #ffffff; 
+}
+
+a:hover {
+  color: #ffbe0b; 
+}
+
+/* Estilo personalizado para el tooltip */
+.tooltip-personalizado .tooltip-inner { /* tooltip-inner es una clase de boostrap para el tooltip */
+  background-color: #299ba6; 
+}
+
+
+.navbar {
+  background-color: transparent; 
+  transition: background-color 0.3s ease; /* Transición que se hace suave el cambio de color de fondo */
+}
+
+.navbar-scrolled {
+  background-color: #20818b ; 
+}
