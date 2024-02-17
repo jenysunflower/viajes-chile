@@ -4,18 +4,18 @@
 body {
   background-color: #000;
   font-size: 18px;
+  margin: 0;
+  padding: 0;
 }
 
 body * {
   font-family: 'Roboto', sans-serif;
-
 }
 
 #carousel img {
   width: 100%;
-  height: 800px;
+  height: 700px;
   object-fit: cover;
-  object-position: center;
   /* object-position: 0 120px; se usa para mover la imagen */
 }
 
@@ -24,6 +24,11 @@ main {
   width: 70%;
   margin: auto;
   /* para centrar lo que contiene el main */
+}
+
+section{
+  width: 100%;
+  height: auto;
 }
 
 .logo img {
@@ -113,11 +118,10 @@ main {
   padding-top: 1rem;
 }
 
-
-
 .container-footer {
   display: flex;
-  height: 100%; /* altura del conteneedor */
+  width: 100%;
+  height: auto; /* altura del conteneedor */
   padding: 2rem;
   color: #fff;
   background-color: #299ba6;
@@ -175,18 +179,16 @@ a:hover {
 
 
 /* Se agregan media queries  */
+@media only screen and (max-width: 768px) {
 
-@media (max-width: 770px) {
   .iconos {
     order: -1; /* con esto cambio el orden para mover la caja icono arriba */
   }
-}
-
-@media only screen and (max-width: 750px) {
   
   .container-footer {
     display: flex;
-    height: 100%; /* altura del conteneedor */
+    width: 100%;
+    height: auto; /* altura del conteneedor */
     padding: 2rem;
     color: #fff;
     background-color: #299ba6;
@@ -195,7 +197,6 @@ a:hover {
     text-align: center;
     align-items: center; /* Centra de manera vertical */
   
-   
   }
   }
 
